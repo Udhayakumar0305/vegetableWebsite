@@ -1,0 +1,2688 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+    /*    green---    color: #4cd137;
+
+    tomato-----  color: #FF6347;       */
+}
+
+*::selection{
+    background-color:lightseagreen;
+    color:white;
+}
+
+        /*------   Landing page styling starts here -----    */
+
+.landing{
+    background-image:url('/images/carousel-1.jpg') ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+header a{
+    text-decoration: none;
+    color:black ;
+    font-weight: bold;
+
+}
+header{
+    display: flex;
+    padding: 1em;
+    height: 70px;
+    width: 100vw;
+    background-color:  #f1f2f6;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+#logo{
+    flex: 3;
+    font-size: 40px;
+    color: #4cd137;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    position: relative;
+    bottom: 5px;
+}
+.gg{
+    color: #FF6347;
+}
+nav{
+    flex: 2;
+    display: flex;
+    
+    
+}
+nav a{
+    flex: 1;
+    font-size: 20px;
+     padding-top: 10px; 
+   
+}
+
+nav a:hover{
+     text-decoration: underline;
+     color: #FF6347;
+    
+    
+    
+}
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check:checked ~.checkbtn{
+    color: red;
+}
+
+#check{
+    display: none;
+}
+
+                /*------   Maintext styling -----    */
+
+  .maintext{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    padding: 4em;
+  }  
+  .tagline1{
+    font-size: 70px;
+    font-weight: bolder;
+
+  }            
+  .tagline2{
+    font-size: 70px;
+    font-weight: bolder;
+    padding-left: 60px;
+
+  }  
+ .buttons{
+    position: relative;
+    top: 40px;
+    left: 70px;
+   
+ }
+
+ .btn1{
+    padding: 15px 60px;
+    background-color: #4cd137;
+    border: 1px solid  #4cd137 ;
+    border-radius: 30px;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+} 
+.btn2{
+    padding: 15px 60px;
+    background-color: #FF6347;
+    border: 1px solid   #FF6347 ;
+    border-radius: 30px;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 25px;
+} 
+
+.btn1:hover{
+    background-color: navy;
+    border: 1px solid navy;
+    transition: 0.4s;
+   cursor: pointer;
+
+}
+.btn2:hover{
+    background-color: navy;
+    border: 1px solid navy;
+    transition: 0.4s;
+    cursor: pointer;
+ 
+}
+
+
+                        /*------   Landing page styling Ends here -----    */
+
+
+
+
+                /*---------  Landing page MEDIA QUERIES starts here  --------- */
+
+@media screen and (min-width:1000px) and (max-width:1350px){
+    .maintext{
+        position: relative;
+        right: 50px;
+    }
+}
+@media screen and (min-width:750px) and (max-width:1000px){
+    nav{
+        flex: 1;
+    }
+    nav a{
+        padding-left:30px ;
+        margin-right:10px ;
+    }
+ #logo{
+    flex: 2;
+    
+ }
+ .maintext{
+    position: relative;
+    right: 70px;
+ }
+}
+
+@media screen  and (min-width:600px) and (max-width:750px) {
+    nav{
+        flex: 2;
+    }
+    nav a{
+        margin-left: 10px;
+    }
+    #logo{
+        flex: 1;
+        position: relative;
+        right: 30px;
+    }
+    .tagline1{
+        font-size: 45px;
+    }
+    .tagline2{
+        font-size: 45px;
+    }
+    .maintext{
+        position: relative;
+        right: 60px;
+    }
+    .btn1{
+        padding: 10px 40px;
+        position: relative;
+        right: 30px;
+        bottom: 20px;
+    }
+    .btn2{
+        padding: 10px 40px;
+        margin: 10px;
+        position: relative;
+        right: 30px;
+        bottom: 20px;
+    }
+  
+   
+
+    
+}
+@media screen  and (min-width:430px) and (max-width:600px) {
+    .tagline1{
+        font-size: 30px;
+    }
+    .tagline2{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .maintext{
+        position: relative;
+        right:50px ;
+        top: 60px;
+    }
+    .btn1{
+        padding: 10px 30px;
+        position: relative;
+        right: 70px;
+        bottom: 20px;
+    }
+    .btn2{
+        padding: 10px 30px;
+        margin: 10px;
+        position: relative;
+        right: 75px;
+        bottom: 20px;
+    }
+
+
+
+}
+
+@media screen  and (min-width:400px) and (max-width:430px) {
+  
+    .tagline1{
+        font-size: 31px;
+    }
+    .tagline2{
+        font-size: 31px;
+        margin-top: 10px;
+        position: relative;
+        right: 20px;
+    }
+    .maintext{
+        position: relative;
+        top: 60px;
+        right: 60px;
+    }
+    .btn1{
+        padding: 10px 30px;
+        position: relative;
+        right: 70px;
+        top: 10px;
+        
+    }
+    .btn2{
+        padding: 10px 30px;
+        
+        position: relative;
+        left: 60px;
+        bottom: 35px;
+    
+        
+    }
+
+}
+@media screen  and (min-width:320px) and (max-width:400px) {
+    .landing{
+        width: 102vw;
+    }
+    header{
+        width: 102vw !important;
+    }
+    .checkbtn{
+        position: relative;
+        right: 20px;
+    }
+    .tagline1{
+        font-size: 26px;
+    }
+    .tagline2{
+        padding: 0 !important;
+        font-size: 26px;
+        
+        margin-top: 10px;
+        position: relative;
+        left: 30px; 
+    }
+    .maintext{
+        width: 100vw !important;
+        position: relative;
+        top: 60px;
+        right: 50px;
+        
+    }
+    .btn1{
+        padding: 8px 20px;
+        position: relative;
+        right: 70px;
+        top: 10px;
+        
+    }
+    .btn2{
+        padding: 8px 20px;
+        
+        position: absolute;
+       
+        left: 45px;
+        top: 10px;
+    
+        
+    }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width:600px) {
+    header{
+        width: 100vw;
+    }
+    #logo{
+        font-size: 35px;
+        position: relative;
+        right: 30px;
+        top: 1px;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    .checkbtn{
+        display: block;
+    position: relative;
+    left: 35px;
+
+    }
+    nav {
+        position: fixed;
+        padding-top:5px;
+        
+        background-color: rgba(0, 0, 0,.5);
+        
+        
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        align-items: center;
+        height: 35%;
+        width: 100%;
+        
+        transition: all .5s;
+    }
+    nav a{
+        color: white;   
+        display:block; 
+    }
+    
+    #check:checked ~ nav{
+        left: 0;
+     
+    }
+}
+
+
+                /*---------  Landing page MEDIA QUERIES Ends here  --------- */
+
+
+
+
+
+                      /*------   About page styling  starts here-----    */
+    .about{
+        display: flex;
+        align-items: center;  
+        gap: 100px;
+        height: 100vh;
+        width: 100vw;
+        border: 2px solid black;
+        
+    }  
+    .imagecolumn{
+        height: 80vh;
+        width: 50vw;
+       
+        
+        
+    }
+   
+    .aboutcolumn{
+        height: 80vh;
+        width: 50vw;
+     
+     } 
+
+    .imagecolumn img{
+        height: 80vh;
+        width: 750px;
+        object-fit: cover;
+        
+     }  
+     
+ 
+    
+     h1{
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+        color:black;   
+    }
+
+    .established{
+        color: #FF6347;
+    }
+     .content h2{
+        font-size: 30px;
+        letter-spacing: 1px;
+       text-decoration: underline;
+     }
+     .content h4{
+       
+     }
+     .name{
+        color: #FF6347;
+        font-size: 18px;
+     }
+                                   /*------   About page styling  Ends here-----    */
+
+
+                  
+                                 /*---------  About page MEDIA QUERIES Starts here  --------- */
+
+     @media screen and (min-width:1000px) and (max-width:1350px){
+        .about{
+            height: 100vh;
+            width: 100vw;
+            border: none;
+        }
+        .imagecolumn{
+            height: 100vh;
+            width: 50vw;
+   
+        }
+        .imagecolumn img{
+            height: 100vh;
+            width: 480px;
+            object-fit: cover;
+        }
+        .aboutcolumn{
+            height: 100vh;
+            width: 50vw;
+            font-size: 15px;
+            
+         
+         } 
+
+        /* .imagecolumn img{
+            height: 80vh;
+            width: 550px;
+            object-fit: cover;
+            
+         }   */
+       
+
+     }
+     @media screen and (min-width:750px) and (max-width:1000px) {
+        .about{
+            height: 100vh;
+            width: 100vw;
+            border: none;
+        }
+        .imagecolumn{
+            height: 100vh;
+            width: 45vw;
+   
+        }
+        .imagecolumn img{
+            height: 100vh;
+            width: 380px;
+            object-fit: cover;
+        }
+        .aboutcolumn{
+            height: 100vh;
+            width: 55vw;
+            font-size: 13px;
+            
+         
+         } 
+        /* .imagecolumn img{
+            height: 90vh;
+            width:450px ;
+            object-fit: cover;
+        }
+        .aboutcolumn{
+            font-size: 12px;
+            position: relative;
+            bottom: 40px;
+        } */
+      
+        
+     }
+     @media screen and (min-width:600px) and (max-width:750px){
+        .about{
+            height: 100vh;
+            width: 100vw;
+            border: none;
+        }
+        .imagecolumn{
+            height: 100vh;
+            width: 40vw;
+   
+        }
+        .imagecolumn img{
+            height: 100vh;
+            width: 300px;
+            object-fit: cover;
+        }
+        .aboutcolumn{
+            height: 100vh;
+            width: 60vw;
+            font-size: 12px;
+            
+         
+         } 
+     }
+
+     @media screen  and (min-width:430px) and (max-width:600px) {
+        .about{
+            height: 110vh;
+            width: 100vw;
+            border: none;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            
+            
+        }
+        .imagecolumn{
+            height: 40vh;
+            width: 100vw;
+   
+        }
+        .imagecolumn img{
+            height: 40vh;
+            width: 100vw;
+        
+            
+            object-fit: cover;
+        }
+        .aboutcolumn{
+            height: 70vh;
+            width: 100vw;
+            font-size: 11px;
+            margin-left: 30px;
+            position: relative;
+            top: 40px;
+            
+         
+         } 
+    
+     }
+
+     @media screen  and (min-width:400px) and (max-width:430px) {
+        .about{
+            height: 110vh;
+            width: 100vw !important;
+            border: none;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            
+            
+            
+        }
+        .imagecolumn{
+            height: 40vh;
+            width: 100vw !important;
+   
+        }
+        .imagecolumn img{
+            height: 50vh;
+            width:100vw !important ;
+        
+            
+            object-fit: cover;
+        }
+        .aboutcolumn{
+            height: 60vh;
+            width: 100vw !important;
+            font-size: 10px;
+            margin-left: 30px;
+            position: relative;
+            
+            
+         
+         } 
+
+     }
+
+     @media screen  and (min-width:320px) and (max-width:400px) {
+        .about{
+            height: 120vh;
+            width: 102vw ;
+            border: none;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            
+            
+            
+        }
+        .imagecolumn{
+            height: 50vh;
+            width: 102vw;
+            position: relative;
+            top: 30px;
+   
+        }
+        .imagecolumn img{
+            height: 50vh;
+            width:102vw;
+        
+            
+            object-fit: cover;
+        }
+        .aboutcolumn{
+            height: 60vh;
+            width: 102vw;
+            font-size: 9.5px;
+            margin-left: 2px;
+            
+
+            
+            
+            
+         
+         } 
+
+     }
+
+
+
+                    /*---------  About page MEDIA QUERIES Ends here  --------- */
+
+
+
+
+                     /*------   product page styling  Starts here-----    */
+
+.products h1{
+    color: #FF6347;
+    text-align: center;
+    
+    position: relative;
+    top: 60px;
+    text-decoration: overline;
+
+}
+
+                                 /*----    VEGETABLES   ----*/
+.vegetables{
+    background-color: #ced6e0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    
+
+}
+ .buy{
+    padding: 5px 25px;
+    background-color: #4cd137;
+    border: 1px solid #4cd137;
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 15px;
+ }
+ .offer{
+    padding: 5px 25px ;
+    background-color:#FF6347;
+    border: 1px solid #FF6347;
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+    margin-left:15px ;
+
+ }
+ .cart{
+    padding: 10px 25px;
+    background-color: white;
+    border: 4px solid #1B1464;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-left: 40px;
+ }
+ .price{
+    color: #FF6347;
+    margin-left: 5px;
+ }
+       /*------   Tomatos   ---*/
+ .tomato{
+    height: 470px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid white;
+ }
+ .tomato h2{
+    text-align: center;
+    margin-top: 15px;
+ }
+ .tomato h3{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .price{
+    color: #FF6347;
+    margin-left: 5px;
+ }
+
+ .tomato img{
+    height:200px ;
+    width: 200px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 20px;
+ }
+
+                       /*------   Potatos   ---*/
+ .potato{
+    height: 470px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid white;
+ }
+ .potato h2{
+    text-align: center;
+    margin-top: 15px;
+ }
+ .potato h3{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .potato img{
+    height:200px ;
+    width: 200px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 20px;
+ }
+
+        /*------   Carrot   ---*/
+ .carrot{
+    height: 470px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid white;
+ }
+ .carrot h2{
+    text-align: center;
+    margin-top: 15px;
+ }
+ .carrot h3{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .carrot img{
+    height:200px ;
+    width: 200px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 20px;
+ }
+                    /*------  cauliflower      ---*/
+
+ .cauliflower{
+    height: 470px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid white;
+ }
+ .cauliflower h2{
+    text-align: center;
+    margin-top: 15px;
+ }
+ .cauliflower h3{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .cauliflower img{
+    height:200px ;
+    width: 200px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 20px;
+ }
+
+                      /*------- FRUITS----*/
+
+ .fruits{
+    background-color: #ced6e0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    
+
+}
+                             /*------- Apple----*/
+
+
+.apple{
+    height: 470px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid white;
+ }
+ .apple h2{
+    text-align: center;
+    margin-top: 15px;
+ }
+ .apple h3{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .apple img{
+    height:200px ;
+    width: 200px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 20px;
+ }
+
+                                /*------- Mango  ----*/
+
+.mango{
+    height: 470px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid white;
+ }
+ .mango h2{
+    text-align: center;
+    margin-top: 15px;
+ }
+ .mango h3{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .mango img{
+    height:200px ;
+    width: 200px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 20px;
+ }
+
+                       /*------- Grapes  ----*/
+
+ 
+.grape{
+    height: 470px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid white;
+ }
+ .grape h2{
+    text-align: center;
+    margin-top: 15px;
+ }
+ .grape h3{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .grape img{
+    height:200px ;
+    width: 200px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 20px;
+ }
+
+                        /*------- Orange  ----*/
+
+    .orange{
+    height: 470px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid white;
+ }
+ .orange h2{
+    text-align: center;
+    margin-top: 15px;
+ }
+ .orange h3{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .orange img{
+    height:200px ;
+    width: 200px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 20px;
+ }                    
+
+
+ .products img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.buy:hover{
+    background-color: navy;
+    border: 1px solid navy;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+.offer:hover{
+    background-color: navy;
+    border: 1px solid navy;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+.cart:hover{
+    background-color: #4cd137;
+    border: 1px solid #4cd137;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.cart:active{
+    background-color: navy;
+    border: 1px solid navy;
+
+}
+
+                               /*------   product page styling  Ends here-----    */
+
+
+
+                       /*------   product page MEDIA QURIES starts here-----    */          
+
+
+          @media screen and (min-width:1240px) and (max-width:1300px){
+            .vegetables{
+                gap: 50px;
+
+            }
+            .fruits{
+                gap: 50px;
+            }
+          }
+
+
+
+        @media screen and (min-width:1000px) and (max-width:1239px){
+            .vegetables{
+                display: flex;
+            flex-wrap: wrap;
+                width: 100vw;
+                height: 180vh;
+                
+            }
+             .tomato{
+                position: relative;
+                top: 80px;
+                
+            }
+            .potato{
+                position: relative;
+                top: 80px;
+                
+
+            }
+            .carrot{
+                position: relative;
+                top: 80px;
+                
+
+            } 
+       
+          
+            .fruits{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100vw;
+                height: 180vh;
+                
+              }
+            .apple{
+                position: relative;
+                top: 80px;
+            }
+            .mango{
+                position: relative;
+                top: 80px;
+                
+
+            }
+            .grape{
+                position: relative;
+                top: 80px;
+                
+
+            }
+        }
+        @media screen and (min-width:910px) and (max-width:1000px) {
+            .vegetables{
+                display: flex;
+            
+                flex-wrap: wrap;
+                width: 100vw;
+                height: 200vh;
+            }
+            .tomato{
+                position: relative;
+                top: 50px;
+                left: 20px;
+                
+            }
+            .potato{
+                position: relative;
+                top: 50px;
+                
+
+            }
+            .carrot{
+                position: relative;
+                top: 50px;
+                right: 20px;
+                
+
+            } 
+            .cauliflower{
+                position: relative;
+                top: 00px;
+            }
+            .fruits{
+                width: 100vw;
+                height: 200vh;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .apple{
+                position: relative;
+                top: 50px;
+                left: 20px;
+                
+            }
+            .mango{
+                position: relative;
+                top: 50px;
+                
+
+            }
+            .grape{
+                position: relative;
+                top: 50px;
+                right: 20px;
+
+                
+
+            } 
+            .orange{
+                position: relative;
+                top: 0px;
+            }
+        }
+        @media screen and (min-width:750px) and (max-width:910px) {
+            .vegetables{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100vw;
+                height: 200vh;
+            }
+            .tomato{
+                position: relative;
+                top: 50px;
+                
+            }
+            .potato{
+                position: relative;
+                top: 50px;
+                
+
+            }
+            .carrot{
+                position: relative;
+                top: 0px;
+                
+
+            } 
+            .cauliflower{
+                position: relative;
+                top: 00px;
+            }
+            .fruits{
+                width: 100vw;
+                height: 200vh;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .apple{
+                position: relative;
+                top: 50px;
+                
+            }
+            .mango{
+                position: relative;
+                top: 50px;
+                
+
+            }
+            .grape{
+                position: relative;
+                top: 0px;
+                
+
+            } 
+            .orange{
+                position: relative;
+                top: 00px;
+            }
+        }
+
+        @media screen and (min-width:600px) and (max-width:750px) {
+            .vegetables{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100vw;
+                height: 180vh;
+            }
+            .tomato{
+                position: relative;
+                top: 50px;
+                left: 15px;
+                
+            }
+            .potato{
+                position: relative;
+                top: 50px;
+                right: 15px;
+                
+
+            }
+            .carrot{
+                position: relative;
+                top: 0px;
+                left: 15px;
+                
+
+            } 
+            .cauliflower{
+                position: relative;
+                top: 00px;
+                right: 15px;
+
+            }
+            .fruits{
+                width: 100vw;
+                height: 180vh;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .apple{
+                position: relative;
+                top: 50px;
+                left: 15px;
+                
+            }
+            .mango{
+                position: relative;
+                top: 50px;
+                right: 15px;
+
+                
+
+            }
+            .grape{
+                position: relative;
+                top: 0px;
+                left: 15px;
+                
+
+            } 
+            .orange{
+                position: relative;
+                top: 00px;
+                                right: 15px;
+
+            }
+
+        }
+
+        @media screen  and (min-width:480px) and (max-width:600px) {
+            .vegetables{
+                display: flex;
+                flex-wrap: wrap;
+                
+            
+
+                
+                width: 100vw;
+                height: 145vh;
+            }
+            .buy{
+                padding: 3px 15px;
+                position: relative;
+                right: 5px;
+                bottom: 5px;
+                }
+             .offer{
+                padding: 3px 15px ;
+                position: relative;
+                left: 0px;
+                margin: 0;
+                bottom: 5px;
+
+             }
+             .cart{
+                padding: 5px 20px;
+            
+                font-size: 15px;
+                position: relative;
+                right: 10px;
+                
+             }
+             .price{
+                color: #FF6347;
+                margin-left: 5px;
+             }
+                   /*------   Tomatos   ---*/
+             .tomato{
+                height: 370px;
+                width: 200px;
+                position: relative;
+                top: 50px;
+             
+             }
+             .tomato h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .tomato h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .price{
+                color: #FF6347;
+                margin-left: 5px;
+             }
+            
+             .tomato img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+                    /*------   POtato   ---*/
+
+             .potato{
+                height: 370px;
+                width: 200px;
+                position: relative;
+                top: 50px;
+              
+             }
+             .potato h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .potato h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .potato img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+            
+                    /*------   Carrot   ---*/
+             .carrot{
+                height: 370px;
+                width: 200px;
+               
+             }
+             .carrot h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .carrot h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .carrot img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+                                /*------  cauliflower      ---*/
+            
+             .cauliflower{
+                height: 370px;
+                width: 200px;
+                
+             }
+             .cauliflower h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .cauliflower h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .cauliflower img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+            
+                         
+            .fruits{
+                display: flex;
+                flex-wrap: wrap;
+                  width: 100vw;
+                height: 145vh;
+            }
+
+                                         /*------- Apple----*/
+
+
+.apple{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    top: 50px;
+    
+ }
+ .apple h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .apple h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .apple img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+
+                                /*------- Mango  ----*/
+
+.mango{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    top: 50px;
+  
+ }
+ .mango h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .mango h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .mango img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+
+                       /*------- Grapes  ----*/
+
+ 
+.grape{
+    height: 370px;
+    width: 200px;
+  
+ }
+ .grape h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .grape h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .grape img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+
+                        /*------- Orange  ----*/
+
+    .orange{
+    height: 370px;
+    width: 200px;
+   
+ }
+ .orange h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .orange h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .orange img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }                    
+   
+        }
+
+
+        @media screen  and (min-width:430px) and (max-width:480px) {
+            .vegetables{
+                display: flex;
+                flex-wrap: wrap;
+                
+            
+
+                
+                width: 100vw;
+                height: 280vh;
+            }
+            .buy{
+                padding: 3px 15px;
+                position: relative;
+                right: 5px;
+                bottom: 5px;
+                }
+             .offer{
+                padding: 3px 15px ;
+                position: relative;
+                left: 0px;
+                margin: 0;
+                bottom: 5px;
+
+             }
+             .cart{
+                padding: 5px 20px;
+            
+                font-size: 15px;
+                position: relative;
+                right: 10px;
+                
+             }
+             .price{
+                color: #FF6347;
+                margin-left: 5px;
+             }
+                   /*------   Tomatos   ---*/
+             .tomato{
+                height: 370px;
+                width: 200px;
+                position: relative;
+                top: 70px;
+             
+             }
+             .tomato h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .tomato h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+        
+            
+             .tomato img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+                    /*------   POtato   ---*/
+
+             .potato{
+                height: 370px;
+                width: 200px;
+                position: relative;
+                top: 30px;
+              
+              
+             }
+             .potato h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .potato h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .potato img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+            
+                    /*------   Carrot   ---*/
+             .carrot{
+                height: 370px;
+                width: 200px;
+                position: relative;
+            bottom: 10px;
+               
+             }
+             .carrot h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .carrot h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .carrot img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+                                /*------  cauliflower      ---*/
+            
+             .cauliflower{
+                height: 370px;
+                width: 200px;
+                position: relative;
+                bottom: 50px;
+
+                
+             }
+             .cauliflower h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .cauliflower h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .cauliflower img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+
+
+            
+                         
+            .fruits{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100vw;
+                height: 280vh;
+            }
+
+                                         /*------- Apple----*/
+
+
+.apple{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    top: 50px;
+   
+    
+ }
+ .apple h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .apple h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .apple img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+ 
+
+                                /*------- Mango  ----*/
+
+.mango{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    
+  
+  
+ }
+ .mango h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .mango h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .mango img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+
+                       /*------- Grapes  ----*/
+
+ 
+.grape{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    bottom: 10px;
+  
+ }
+ .grape h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .grape h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .grape img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+
+                        /*------- Orange  ----*/
+
+    .orange{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    bottom: 50px;
+   
+ }
+ .orange h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .orange h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .orange img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }                    
+   
+        }
+
+        @media screen  and (min-width:400px) and (max-width:430px) {
+            .products h1{
+                font-size: 27px;
+               margin-top: 25px;
+            }
+        
+            .vegetables{
+                display: flex;
+                flex-wrap: wrap;
+                
+            
+
+                
+                width: 100vw ;
+                height: 300vh;
+                
+            }
+            .buy{
+                padding: 3px 15px;
+                position: relative;
+                right: 5px;
+                bottom: 5px;
+                }
+             .offer{
+                padding: 3px 15px ;
+                position: relative;
+                left: 0px;
+                margin: 0;
+                bottom: 5px;
+
+             }
+             .cart{
+                padding: 5px 20px;
+            
+                font-size: 15px;
+                position: relative;
+                right: 10px;
+                
+             }
+             .price{
+                color: #FF6347;
+                margin-left: 5px;
+             }
+                   /*------   Tomatos   ---*/
+             .tomato{
+                height: 370px;
+                width: 200px;
+                position: relative;
+                top: 70px;
+             
+             }
+             .tomato h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .tomato h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+        
+            
+             .tomato img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+                    /*------   POtato   ---*/
+
+             .potato{
+                height: 370px;
+                width: 200px;
+                position: relative;
+                top: 30px;
+              
+              
+             }
+             .potato h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .potato h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .potato img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+            
+                    /*------   Carrot   ---*/
+             .carrot{
+                height: 370px;
+                width: 200px;
+                position: relative;
+            bottom: 10px;
+               
+             }
+             .carrot h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .carrot h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .carrot img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+                                /*------  cauliflower      ---*/
+            
+             .cauliflower{
+                height: 370px;
+                width: 200px;
+                position: relative;
+                bottom: 50px;
+
+                
+             }
+             .cauliflower h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .cauliflower h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .cauliflower img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+
+
+            
+                         
+            .fruits{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100vw ;
+                height: 300vh;
+                
+            }
+
+                                         /*------- Apple----*/
+
+
+.apple{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    top: 50px;
+   
+    
+ }
+ .apple h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .apple h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .apple img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+ 
+
+                                /*------- Mango  ----*/
+
+.mango{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    
+  
+  
+ }
+ .mango h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .mango h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .mango img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+
+                       /*------- Grapes  ----*/
+
+ 
+.grape{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    bottom: 10px;
+  
+ }
+ .grape h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .grape h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .grape img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+
+                        /*------- Orange  ----*/
+
+    .orange{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    bottom: 50px;
+   
+ }
+ .orange h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .orange h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .orange img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }                    
+
+        }
+        @media screen  and (min-width:320px) and (max-width:400px) {
+            .products h1{
+                font-size: 30px;
+            }
+        
+            .vegetables{
+                display: flex;
+                flex-wrap: wrap;
+                
+            
+
+                
+                width: 102vw;
+                height: 300vh;
+                
+            }
+            .buy{
+                padding: 3px 15px;
+                position: relative;
+                right: 5px;
+                bottom: 5px;
+                }
+             .offer{
+                padding: 3px 15px ;
+                position: relative;
+                left: 0px;
+                margin: 0;
+                bottom: 5px;
+
+             }
+             .cart{
+                padding: 5px 20px;
+            
+                font-size: 15px;
+                position: relative;
+                right: 10px;
+                
+             }
+             .price{
+                color: #FF6347;
+                margin-left: 5px;
+             }
+                   /*------   Tomatos   ---*/
+             .tomato{
+                height: 370px;
+                width: 200px;
+                position: relative;
+                top: 70px;
+             
+             }
+             .tomato h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .tomato h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+        
+            
+             .tomato img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+                    /*------   POtato   ---*/
+
+             .potato{
+                height: 370px;
+                width: 200px;
+                position: relative;
+                top: 30px;
+              
+              
+             }
+             .potato h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .potato h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .potato img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+            
+                    /*------   Carrot   ---*/
+             .carrot{
+                height: 370px;
+                width: 200px;
+                position: relative;
+            bottom: 10px;
+               
+             }
+             .carrot h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .carrot h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .carrot img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+                                /*------  cauliflower      ---*/
+            
+             .cauliflower{
+                height: 370px;
+                width: 200px;
+                position: relative;
+                bottom: 50px;
+
+                
+             }
+             .cauliflower h2{
+                text-align: center;
+                margin-top: 10px;
+             }
+             .cauliflower h3{
+                text-align: center;
+                margin-top: 5px;
+             }
+             .cauliflower img{
+                height:150px ;
+                width: 150px;
+                object-fit: cover;
+                margin-left: 25px;
+                margin-top: 10px;
+             }
+
+
+            
+                         
+            .fruits{
+                display: flex;
+                flex-wrap: wrap;
+                width: 102vw;
+                height: 300vh;
+                
+            }
+
+                                         /*------- Apple----*/
+
+
+.apple{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    top: 50px;
+   
+    
+ }
+ .apple h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .apple h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .apple img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+ 
+
+                                /*------- Mango  ----*/
+
+.mango{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    
+  
+  
+ }
+ .mango h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .mango h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .mango img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+
+                       /*------- Grapes  ----*/
+
+ 
+.grape{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    bottom: 10px;
+  
+ }
+ .grape h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .grape h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .grape img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }
+
+                        /*------- Orange  ----*/
+
+    .orange{
+    height: 370px;
+    width: 200px;
+    position: relative;
+    bottom: 50px;
+   
+ }
+ .orange h2{
+    text-align: center;
+    margin-top: 10px;
+ }
+ .orange h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .orange img{
+    height:150px ;
+    width: 150px;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-top: 10px;
+ }  
+
+        }
+
+
+                           /*------   product page MEDIA QURIES ends here-----    */   
+
+
+                  
+
+                       /*------   Contact page styling  starts here-----    */
+              
+          .contact{
+            width: 100vw;
+            height: 100vh;
+            background-color: #ced6e0;
+             
+          }   
+          .contactpage{
+            text-align: center;
+            color:black;
+            text-decoration: underline;
+          
+            
+          }
+          .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            height: 100vh;
+            width: 100vw;
+            
+
+          }   
+                          /*---   Container1  ---*/
+
+          .container1{
+            height: 550px;
+            width: 500px;
+            border: 1px solid #273c75;
+            background-color: #273c75;
+            color: white;
+        }    
+        .container1 h2{
+            margin-left: 30px;
+            margin-top: 40px;
+        
+            font-size: 30px;
+            color: white;
+            
+            font-weight: bold;
+        }
+        .container1 label{
+            font-weight: bold;
+            margin-left:  30px;
+            opacity: .9;
+            color: white;
+          
+          }
+        
+        
+        .container1 input{
+            margin-left:30px ;
+            border: none;
+            outline: none;
+            background: transparent;
+            color:white;
+            border-bottom: 1px solid white;
+            font-size: 20px;
+            width: 350px;
+            font-weight: bold;
+        
+        
+        }
+        
+        .container1 textarea{
+            margin-left: 30px;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 1px solid white;
+            width: 350px;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+        
+        }
+        
+        
+        .container1 button{
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 15px ;
+            background-color: #ff1493;
+            color: white;
+            border:1px solid  #ff1493 ;
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+        
+        .container1 button:hover{
+            background-color:darkorange;
+            border: 1px solid darkorange;
+            outline: 3px solid white ;
+            outline-offset: 7px;
+            
+            cursor: pointer;
+        }
+        
+        .container1 button:active{
+            background-color:black ;
+            border: 1px solid black;
+
+        }   
+
+                                  /*---   Container2  ---*/
+
+        .container2{
+            width: 500px;
+            height: 550px;
+            background-color: whitesmoke;
+            
+            box-shadow: 5px 5px 5px black;
+            
+        }
+        .container2 h2{
+            margin-left: 60px;
+            margin-top: 70px;
+        
+            font-size: 30px;
+           
+        }
+        .container2 hr{
+            
+            border: 3px solid #FF6347;
+            width: 70px;
+            margin-left: 60px;
+            
+        }
+        .container2 p{
+            margin-left:60px ;
+            font-weight: bold;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+        
+        
+        .container2  span{
+            margin-left: 70px;
+            font-weight: bolder;
+            font-size: 18px;
+            
+            
+            
+        }
+        .container2 .data{
+            position: relative;
+            right: 50px;
+            opacity: .5;
+        }
+     
+        
+        .container2  i{
+            position: relative;
+            left: 55px;
+            font-size: 20px;
+        }
+
+                              /*------   Contact page styling  ends here-----    */
+
+
+
+                    
+                       /*------   Contact page MEDIA QURIES starts here-----    */
+
+
+        @media screen and (min-width:480px) and (max-width:920px){
+            .main{
+                display:flex;
+                flex-wrap:wrap;
+                
+                width: 100vw;
+                position: relative;
+                top: 80px;
+    
+                
+            }
+            .contact{
+                background-color:#95afc0;
+                height: 200vh;
+                width: 100vw;
+            }
+        }
+
+        @media screen  and (min-width:430px) and (max-width:480px) {
+            .main{
+                display:flex;
+                flex-wrap:wrap;
+                
+                width: 100vw;
+                position: relative;
+                top: 80px;
+    
+                
+            }
+            .contact{
+                background-color:#95afc0;
+                height: 200vh;
+                width: 100vw;
+            }
+            .container1{
+                height: 550px;
+                width: 450px;
+            }
+            .container2{
+                height: 500px;
+                width: 450px;
+        
+            }
+            .data{
+                font-size: 15px !important;
+            }
+            
+        }
+
+        @media screen  and (min-width:400px) and (max-width:430px) {
+            .main{
+                display:flex;
+                flex-wrap:wrap;
+                height: 160vh;
+                
+                width: 100vw ;
+                position: relative;
+                top: 80px;
+    
+                
+            }
+            .contact{
+                background-color:#95afc0;
+                height: 190vh;
+                width: 100vw ;
+            }
+            .container1{
+                height: 600px;
+                width: 90vw ;
+            }
+            .container2{
+                height: 500px;
+                width: 90vw ;
+                position: relative;
+                bottom: 60px;
+                
+        
+            }
+            .data{
+                margin-right: 12px;
+                font-size: 8px !important ;
+                font-weight: bold;
+                color: black !important;
+                opacity: 1.0 !important;
+            }
+            .container1 input{
+                width: 280px;
+            }
+            .container1 textarea{
+                width: 280px;
+            }
+
+        }
+
+        @media screen  and (min-width:320px) and (max-width:400px) {
+            .main{
+                display:flex;
+                flex-wrap:wrap;
+                height: 160vh;
+                
+                width: 102vw;
+                position: relative;
+                top: 80px;
+    
+                
+            }
+            .contact{
+                background-color:#95afc0;
+                height: 190vh;
+                width: 102vw;
+            }
+            .container1{
+                height: 600px;
+                width: 95vw ;
+            }
+            .container2{
+                height: 500px;
+                width: 95vw ;
+                position: relative;
+                bottom: 60px;
+                
+        
+            }
+            .data{
+                margin-right: 12px;
+                font-size: 8px !important ;
+                font-weight: bold;
+                color: black !important;
+                opacity: 1.0 !important;
+            }
+            .container1 input{
+                width: 250px;
+            }
+            .container1 textarea{
+                width: 250px;
+            }
+            /*------*/
+
+            .container2 h2{
+                position: relative;
+                right: 30px;
+            }
+            .container2 hr{
+                position: relative;
+                right: 15px;
+            }
+            .container2 p{
+                position: relative;
+                right: 20px;
+            } 
+            .container2  span{
+                margin-left: 50px;
+                font-weight: bolder;
+                font-size: 18px;
+                
+                
+                
+            }
+            .container2 .data{
+                position: relative;
+                right: 40px;
+                opacity: .5;
+                font-size: 8px !important;
+            }
+         
+            
+            .container2  i{
+                position: relative;
+                left: 35px;
+                font-size: 20px;
+            }
+    
+      
+
+        }
+
+
+                               /*------   Contact page MEDIA QURIES ends here-----    */
+
+        
+            
+                     /*------   Footer page styling  Starts here-----    */
+ 
+         .footer{
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #596275;
+            flex-wrap: wrap;
+            
+        
+        }  
+      
+        .footer h3{
+            font-size: 20px;
+            color: white;
+            text-decoration: underline;
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }   
+        .footer h5{
+            font-size: 16px;
+            color: black;
+            padding: 5px;
+        }    
+         .list a {
+            font-size: 17px;
+            font-weight: bold;
+            
+            text-decoration: none;
+            color: black;
+    
+        }   
+        .list{
+            list-style-type: none;
+            padding: 3px;
+        } 
+
+                             /*------   Footer page styling  ends here-----    */
+                             
+
+  
+                                      /*------   Footer page MEDIA QUERIES starts here-----    */
+
+
+        @media screen and (max-width:1240px) {
+            .footer{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: #596275;
+
+                
+            }
+            @media screen and (min-width:320px) and (max-width:400px){
+                .footer{
+                    width: 102vw !important;
+                    height: 220vh;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                .map iframe{
+                    width: 300px;
+                }
+                .column1{
+                    position: relative;
+                    right: 20px;
+                }
+          
+            }
+
+      
+
+
+        } 
+
+                            /*------   Footer page MEDIA QUERIES ends here-----    */
+
+
+ 
